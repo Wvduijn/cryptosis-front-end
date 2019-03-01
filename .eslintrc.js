@@ -9,8 +9,9 @@ module.exports = {
     // https://github.com/prettier/eslint-config-prettier
     extends: ["prettier",  "prettier/standard", "plugin:vue/recommended"],
     // https://github.com/prettier/eslint-plugin-prettier
-    plugins: ["vue", "prettier", "html"],
+    plugins: ["vue", "prettier"],
     rules: {
-      "prettier/prettier": "error"
+      "prettier/prettier": "error",
+      "vue/html-indent": "off"
     }
   };
