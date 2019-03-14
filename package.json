@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start-dev": "concurrently \"node server.js\" \"npm run serve\"",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -10,10 +11,13 @@
   "dependencies": {
     "apollo-boost": "^0.3.1",
     "buefy": "^0.7.3",
+    "concurrently": "^4.1.0",
     "dotenv": "^6.2.0",
+    "eslint-plugin-es-beautifier": "^1.0.1",
     "graphql": "^14.1.1",
     "vue": "^2.6.6",
     "vue-apollo": "^3.0.0-beta.28",
+    "vue-chartist": "^2.2.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
@@ -25,7 +29,7 @@
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "babel-preset-env": "^1.7.0",
-    "eslint": "^5.8.0",
+    "eslint": "^5.15.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.9.0",
